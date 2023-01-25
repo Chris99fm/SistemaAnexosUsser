@@ -1,0 +1,112 @@
+table {
+    border: 1px solid #7c7c7c;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  table tr {
+    background-color: aliceblue;
+    border: 1px solid #7c7c7c;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 900px) {
+    table {
+      border: 0;
+    }
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #7c7c7c;
+      display: block;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    table td {
+      border-bottom: 1px solid #7c7c7c;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+    .ElementoTabla{
+        font-size: 20px;
+      }
+  }
+  @media screen and (max-width:785px) {
+    .Tabla{
+      margin-top: 150px!important;
+    }
+    .Header{
+      margin-top: -80px!important;
+    }
+  }
+  @media screen and (max-width:470px) {
+    .Tabla{
+      margin-top: 210px!important;
+    }
+    .Header{
+      margin-top: -140px!important;
+    }
+  }
+
+  /* general styling */
+  body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+    font-size: 13px;
+  }
+  .ElementoTabla:hover{
+    background-color: rgba(48, 48, 48, 0.7);
+    color: aliceblue;
+    cursor: pointer;
+  }
+  .Tablita{
+    margin-top: 170px;
+  }
