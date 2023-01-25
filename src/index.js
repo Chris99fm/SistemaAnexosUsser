@@ -4,8 +4,6 @@ import './index.css';
 import Header from './componentes/Header/Header';
 import Tabla from './componentes/Tabla/Tabla';
 import Usuario from './componentes/Usuario/Usuario';
-import AgregarColab from './componentes/AgregarColab/AgregarColab';
-import UpdateColab from './componentes/UpdateColab/UpdateColab';
 import {
   BrowserRouter,
   HashRouter,
@@ -28,18 +26,6 @@ root.render(
         <div>
           <Header/>
           <Usuario/>
-        </div>
-      }/>
-      <Route path="/AgregarColaborador" element={
-        <div>
-          <Header/>
-          <AgregarColab/>
-        </div>
-      }/>
-      <Route path="/UpdateColaborador" element={
-        <div>
-          <Header/>
-          <UpdateColab/>
         </div>
       }/>
     </Routes>

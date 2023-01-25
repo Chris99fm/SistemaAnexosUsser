@@ -1,9 +1,9 @@
 {
-  "name": "Sistema_de_Anexos_Admin",
+  "name": "Sistema_de_Anexos_Usuario",
   "version": "0.1.0",
   "private": true,
-  "productName": "Sistema de Anexos Admin",
-  "author":"Christian Fuentes",
+  "productName": "Sistema de Anexos Usuario",
+  "author": "Christian Fuentes",
   "main": "public/electron.js",
   "homepage": "./",
   "dependencies": {
@@ -71,7 +71,7 @@
       "node_modules/**/*",
       "package.json"
     ],
-    "appId": "Sistema_de_Anexos_Admin_Feltrex",
+    "appId": "Sistema_de_Anexos_Usuario_Feltrex",
     "win": {
       "icon": "src/img/Logo.png"
     },

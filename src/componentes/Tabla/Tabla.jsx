@@ -124,7 +124,6 @@ function Tabla() {
               <option value="0">Activo</option>
               <option value="1">Inactivo</option>
             </select>
-            <div className='agregar' onClick={()=>  navigate(`/AgregarColaborador`)}><img src={mas} alt="" /></div>
         </div>
       </div>
       <div className="Tablita">
