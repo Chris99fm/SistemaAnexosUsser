@@ -42,8 +42,9 @@
     margin-right: 50px;
 }
 .ImgColaborador img{
-    width: 512px;
-    height: 512px;
+    max-width: 50vw;
+    max-height: 512px;
+    min-width: 40vw;
     border: 3px solid #7c7c7c;
     border-radius: 50px;
 }

@@ -59,13 +59,6 @@ function Usuario() {
           </div>
           <div className='ImgColaborador'>
             <img id={colaborador['Id_Imagen']} src={colaborador['Imagen']}></img>
-            {
-              colaborador['Id_Estado'] === 0?
-                <div id='estado' estado='0' className='Estado activo' onClick={()=> CambiarEstado(colaborador["Id_Colaborador"])}>Activo</div>
-                :
-                <div id='estado' estado='0' className='Estado inactivo'onClick={()=> CambiarEstado(colaborador["Id_Colaborador"])}>Inactivo</div>
-            }
-            <input  className='btn_actualizar' type="button" value="Actualizar" onClick={()=>  navigate(`/UpdateColaborador?id=${colaborador["Id_Colaborador"]}`)} />
           </div>
         </div>
       )
@@ -77,28 +70,6 @@ function Usuario() {
   React.useEffect(() =>{
     loadColaborador()
   }, [])
-
-  async function CambiarEstado(id){
-    const element = document.getElementById('estado');
-    const est = element.getAttribute('estado')
-    if(est==='0'){
-      element.classList.add("inactivo")
-      element.classList.remove("activo")
-      element.innerHTML = 'inactivo'
-      element.setAttribute('estado', '1')
-    }
-    if(est==='1'){
-      element.classList.add("activo")
-      element.classList.remove("inactivo")
-      element.innerHTML = 'activo'
-      element.setAttribute('estado', '0')
-    }
-    const data ={
-      Id_Colaborador: id
-    };
-    const out = await (axios.post("http://"+json.SITE+":"+json.PORT+"/CambiarEstado/", data));
-    alert(out.data)
-  }
 
   return (
     <div className="Usuario">
