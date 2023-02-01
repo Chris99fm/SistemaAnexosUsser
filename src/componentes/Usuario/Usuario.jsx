@@ -96,7 +96,7 @@ function Usuario() {
     const data ={
       Id_Colaborador: id
     };
-    const out = await (axios.post("http://localhost:8081/CambiarEstado/", data));
+    const out = await (axios.post("http://"+json.SITE+":"+json.PORT+"/CambiarEstado/", data));
     alert(out.data)
   }
 
