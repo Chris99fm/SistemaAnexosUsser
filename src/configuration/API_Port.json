@@ -1,4 +1,4 @@
 {
-    "SITE":"localhost"
+    "SITE":"172.16.10.8"
     ,"PORT":"8081"
 }
